@@ -1,0 +1,222 @@
+$heigthImgProd:180px;
+$widthImgProd:180px;
+$fontWeight:bolder;
+
+@mixin style ($bgColor,$fWeight,$color){
+  background-color: $bgColor;
+  font-weight: $fWeight;
+  color: $color;
+  
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+  background-color: rgb(128, 153, 130);
+  margin-top: 20px  ;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  
+}
+
+
+.color1{
+  @include style(rgb(191, 193, 196),bolder,black);
+
+  
+}
+
+.color2{
+  @include style(rgb(218, 216, 216),bolder,black);
+ 
+  
+}
+
+.color3{
+  @include style(rgb(207, 216, 224),bolder,black);
+  
+  
+}
+
+.color4{
+  @include style(rgb(150, 148, 148),bolder,black);
+  
+  
+}
+
+
+
+
+
+
+
+
+main .container  h2{
+  font-weight: $fontWeight;
+  
+}
+main .container h1{
+  font-weight: $fontWeight;
+  font-size: 40px;
+}
+
+
+
+main{
+  .container{
+    form{
+      @include style(rgb(191, 193, 196),bolder , black);
+      
+       button{
+        @include style(rgb(207, 216, 224),bolder , black)
+       }
+    }
+  }
+}
+
+
+
+
+
+@keyframes nombre {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+
+main{
+  .contProductoPrinc{
+    .contProductoTitulo{
+      text-shadow: 0.1em 0.1em 0.2em black;}
+    .contProducto{
+      .contProducto2{
+        img{
+          height: $heigthImgProd;
+          width: $widthImgProd;
+        }
+      }
+    }
+  }
+}
+
+main{
+  .container{
+    .titulo{
+      h1{
+        text-shadow: 0.1em 0.1em 0.2em black;
+      }
+      
+    }
+  }
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  .redes{
+    
+    .txtRedes{
+        span{
+          color: black;
+          margin-right: 20px;
+      }
+    }
+    .imgRedes{
+      .imgRedes2{
+        img{
+          width: 25px;
+          height: 25px;
+          margin-left: 3px;
+          margin-right: 5px;
+        }
+      }
+      .imgRedes3{
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+        
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+main{
+  .contProductoPrinc{
+    .contProducto{
+      .contProducto2:hover{
+        background-color: rgb(211, 208, 208);
+      }
+    }
+} 
+ 
+ 
+
+  
+}
+
+
+
+header .container-fluid nav ul li a .carrito{
+width: 20%;
+height: 20%;
+}
+
+
+
+
+
+ol li {
+  font-weight: bold;
+  list-style-type: lower-latin;
+  list-style-type: none;
+}
+
+
+
+
+
+ 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+     
+  
+
+} 
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){ 
+  
+  
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  
+  
+
+}
+
