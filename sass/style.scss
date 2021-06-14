@@ -16,13 +16,12 @@ $fontWeight:bolder;
 }
 
 body {
-  background-color: rgb(128, 153, 130);
+  
+  
   margin-top: 20px  ;
   width: 100%;
-  font-family: 'Work Sans', sans-serif;
-  display: flex;
-  flex-flow: column;
-  flex-wrap: nowrap;
+  font-family: 'Raleway', sans-serif;
+ 
   
 }
 
@@ -50,27 +49,91 @@ body {
   
   
 }
+.color4{
+  @include style(rgb(149, 163, 146),bolder,black)
+}
 
 
 
 
 
-
-
-
-main .container  h2{
-  font-weight: $fontWeight;
+header{
+  .container-fluid{
+    .container{
+      
+        ul{
+          
+          li{
+            
+            a{
+              
+              .carrito{
+                width: 10%;
+                height: 10%;
+            }
+          }
+        }
+      } 
+    
+  }
   
+    
 }
-main .container h1{
-  font-weight: $fontWeight;
-  font-size: 40px;
 }
+
+
+
+
+
 
 
 
 main{
   .container{
+    h4{
+      font-weight: bolder;
+      font-size: large;
+      text-align: center;
+      padding-right: 10px;
+      img{
+        
+        padding-left: 10px;
+        width: 4%;
+        height: 4%;
+      }
+    
+    }
+    
+     .imgMarcas{
+       
+       .d-flex{
+         display: flex;
+         justify-content: center;
+         border-color: grey;
+         border-style: solid;
+         border-radius: 5px;
+         
+        img{
+          height: 85%;
+          width: 85%;
+        }
+       }
+       
+     }
+    h2{
+      font-weight: $fontWeight;
+      text-align: center;
+      text-shadow: 0.1em 0.1em 0.2em black;
+    }
+    h1{
+      font-weight: $fontWeight;
+  font-size: 40px;
+    }
+    h4{
+      font-weight: bold;
+      text-align: center;
+      
+    }
     form{
       @include style(rgb(191, 193, 196),bolder , black);
       
@@ -98,8 +161,13 @@ main{
 .carousel-inner img {
   width: 100%;
   height: 100%;
+  
+  
+  
 
 }
+
+
 
 
 
@@ -108,7 +176,8 @@ main{
 main{
   .contProductoPrinc{
     .contProductoTitulo{
-      text-shadow: 0.1em 0.1em 0.2em black;}
+      text-shadow: 0.1em 0.1em 0.2em black;
+    }
     .contProducto{
       .contProducto2{
         img{
@@ -121,34 +190,261 @@ main{
 }
 
 main{
+  .prodYBusc{
+    padding-right: 0px;
+    .container-fluid{
+      
+      .row{
+
+        .busc{
+          padding-left: 15px;
+        }
+        
+        .favorito{
+          a{
+            font-weight: bolder;
+            h4{
+              font-weight: bolder;
+              padding-right: 25px;
+            }
+            
+            .favorito{
+              
+              width: 10%;
+          height: 10%;
+            }
+          }
+
+        }
+        .carrito{
+          a{
+            h4{
+              font-weight: bolder;
+              padding-right: 20px;
+            }
+            .carrito{
+              
+              width: 10%;
+          height: 10%;
+            }
+          }
+          
+        }
+        .dropD{
+          h4{
+            font-weight: bolder;
+          }
+          h5{
+            font-weight: bolder;
+          }
+          ul{
+            li{
+              a{
+                h4{
+                  padding-right: 10px;
+                  img{
+                    padding-left: 10px;
+                    width: 8%;
+            height: 8%;
+                  }
+                }
+                
+              }
+              div{
+                color: black;
+              }
+              a{
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  .modal{
+    color: black;
+    font-weight: $fontWeight;
+  }
+  
   .container{
+    .row{
+      .prod1{
+        .divProd{
+          text-align: center;
+          h5{
+            text-align: center;
+          font-weight: bolder;
+          }
+          h6{
+            text-align: center;
+          font-weight: bolder;
+          }
+             img{
+              
+            height: 60%;
+            width: 60%;
+          }
+          img:hover{
+            -webkit-transform:scale(1.3);transform:scale(1.3);
+            transition:all .5s ease-in-out;
+          }
+        }
+            
+          
+      }
+      .prod2{
+        .divProd{
+          text-align: center;
+          h5{
+            text-align: center;
+          font-weight: bolder;
+          }
+          h6{
+            text-align: center;
+          font-weight: bolder;
+          }
+            img{
+              
+            height: 90%;
+            width: 90%;
+          }
+          img:hover{
+            -webkit-transform:scale(1.3);transform:scale(1.3);
+            transition:all .5s ease-in-out;
+          }
+        }
+            
+          
+      }
+      .prod3{
+        .divProd{
+          text-align: center;
+          h5{
+            text-align: center;
+          font-weight: bolder;
+          }
+          h6{
+            text-align: center;
+          font-weight: bolder;
+          }
+            img{
+            
+            height: 90%;
+            width: 90%;
+          }
+          img:hover{
+            -webkit-transform:scale(1.3);transform:scale(1.3);
+            transition:all .5s ease-in-out;
+          }
+        }
+            
+          
+      }
+    }
+  }
+          
+    
+    .nuevosIng{
+      padding-right: 10px;
+      img{
+        padding-left: 10px;
+        width: 5%;
+        height: 5%;
+      }
+    }
     .titulo{
       h1{
         text-shadow: 0.1em 0.1em 0.2em black;
       }
       
     }
-  }
-}
+}  
+ 
 
 .footer{
+  .container-fluid{
+    .tarjetas{
+     .tarjetas2{
+      img{
+        padding-right: 10px;
+        opacity: 70%;
+        width: 17%;
+      }
+      }
+      
+      
+    }
+    .row{
+      .miCuenta{
+        .list-group{
+          a{
+            
+            color: whitesmoke;
+          }
+          li{
+            
+            
+            h5{
+              font-weight: bolder;
+              color: rgb(3, 3, 151);
+            }
+          }
+        }
+      }
+      .container{
+        
+        .list-group{
+          font-weight: bolder;
+        }
+      }
+    }
+  }
     padding-top: 10px;
     padding-bottom: 10px;
-  .redes{
+    h5{
+      color: black;
+    }
+    .row{
+      padding-left: 20%;
+      padding-right: 21%;
+      
+        a{
+          img{
+            opacity: 80%;
+          }
+        }
+      
+ 
+        
+    }
     
+    
+    .container{
+      span{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }      
+    }
+  .redes{    
     .txtRedes{
         span{
           color: black;
-          margin-right: 20px;
+         
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          font-size: medium;
       }
     }
+      
     .imgRedes{
       .imgRedes2{
         img{
           width: 25px;
           height: 25px;
-          margin-left: 3px;
-          margin-right: 5px;
+          
+          margin-right: 10px;
         }
       }
       .imgRedes3{
@@ -156,12 +452,13 @@ main{
         height: 25px;
         margin-left: 5px;
         
+        
       }
     }
   }
   
-}
 
+}
 
 
 
@@ -182,20 +479,10 @@ main{
 
 
 
-header .container-fluid nav ul li a .carrito{
-width: 20%;
-height: 20%;
-}
 
 
 
 
-
-ol li {
-  font-weight: bold;
-  list-style-type: lower-latin;
-  list-style-type: none;
-}
 
 
 
