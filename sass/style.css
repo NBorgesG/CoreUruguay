@@ -139,7 +139,7 @@ main .prodYBusc {
 }
 
 main .prodYBusc .container-fluid .row .busc {
-  padding-left: 15px;
+  padding-left: 60px;
 }
 
 main .prodYBusc .container-fluid .row .favorito a {
@@ -164,6 +164,10 @@ main .prodYBusc .container-fluid .row .carrito a h4 {
 main .prodYBusc .container-fluid .row .carrito a .carrito {
   width: 10%;
   height: 10%;
+}
+
+main .prodYBusc .container-fluid .row .dropD {
+  padding-left: 70px;
 }
 
 main .prodYBusc .container-fluid .row .dropD h4 {
