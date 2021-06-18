@@ -640,9 +640,13 @@ main{
 
 main{
   .contPrincipal{
+
     -webkit-box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
+    animation-name: nombre;
+    animation-duration: 1.5s;
+    
     .titulo{
       h1{
         text-shadow: 0.3em 0.3em 0.3em black;
@@ -658,6 +662,7 @@ main{
     }
   }
 }
+
 
 main{
   .nov{
@@ -690,6 +695,8 @@ main{
     -webkit-box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
+    animation-name: nombre;
+    animation-duration: 1.5s;
     form{
       padding-left: 60px;
       padding-right: 60px;
@@ -709,7 +716,7 @@ main{
     .subir{
       a{
         position: sticky;
-        
+
         padding-left: 65%;
         img{
           width: 5%;

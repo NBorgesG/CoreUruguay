@@ -505,6 +505,10 @@ main .contProductoPrinc .contProducto .contProducto2:hover {
 main .contPrincipal {
   -webkit-box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
+  -webkit-animation-name: nombre;
+          animation-name: nombre;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 main .contPrincipal .titulo h1 {
@@ -533,6 +537,10 @@ main .nov .titulo h1 {
 main .contacto {
   -webkit-box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
+  -webkit-animation-name: nombre;
+          animation-name: nombre;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 main .contacto form {
