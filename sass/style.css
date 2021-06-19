@@ -225,9 +225,20 @@ main .contProductoPrinc .contProducto .contProducto2 img {
   width: 180px;
 }
 
+main .prodYBusc .cont2 .row div {
+  text-align: center;
+  font-weight: bolder;
+  color: whitesmoke;
+  text-shadow: 0.4em 0.4em 0.4em black;
+}
+
+main .prodYBusc .cont2 .row a {
+  text-align: left;
+  padding-right: 10px;
+}
+
 main .prodYBusc .cont2 .busc {
-  padding-top: 25px;
-  padding-left: 30px;
+  padding-left: 65px;
   padding-right: 30px;
 }
 
@@ -239,32 +250,42 @@ main .prodYBusc .container-fluid {
   background-color: #024062;
 }
 
+main .prodYBusc .container-fluid .row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 main .prodYBusc .container-fluid .row .favorito a {
   font-weight: bolder;
 }
 
 main .prodYBusc .container-fluid .row .favorito a h4 {
   font-weight: bolder;
-  padding-right: 10px;
   color: whitesmoke;
   text-shadow: 0.4em 0.4em 0.4em black;
+  font-size: 25px;
+  text-align: center;
 }
 
 main .prodYBusc .container-fluid .row .favorito a .favorito {
-  width: 16%;
-  height: 16%;
+  padding-left: 15px;
+  padding-top: 5px;
+  width: 15%;
+  height: 15%;
 }
 
 main .prodYBusc .container-fluid .row .carrito a h4 {
+  font-size: 25px;
   font-weight: bolder;
-  padding-right: 10px;
   color: whitesmoke;
   text-shadow: 0.4em 0.4em 0.4em black;
 }
 
 main .prodYBusc .container-fluid .row .carrito a .carrito {
-  width: 17%;
-  height: 17%;
+  padding-left: 13px;
+  padding-top: 3px;
+  width: 15%;
+  height: 15%;
 }
 
 main .prodYBusc .container-fluid .row .dropD {
@@ -448,6 +469,8 @@ main .container .titulo h4 {
 
 .acordeon {
   text-align: center;
+  -webkit-box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
 }
 
 .acordeon .card {
