@@ -28,6 +28,7 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(217,236,247,1) 100%);
   margin-top: 20px  ;
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  
  
   
 }
@@ -113,9 +114,44 @@ header{
 }
 
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 
@@ -501,6 +537,60 @@ main{
   }
 }    
   
+
+.acordeon{
+  text-align: center;
+  
+  .card{
+    justify-content: space-between;
+    background-color: white;
+    div{
+      .card-body{
+        background-color: white;
+        h1{
+          font-weight: bolder;
+          text-shadow: 0.3em 0.3em 0.3em black;
+
+        }
+        
+      }
+    }
+    img{
+      height: 50%;
+      width: 50%;
+    }
+    img:hover{
+      -webkit-transform:scale(1.2);transform:scale(1.2);
+      transition:all .5s ease-in-out;
+    }
+    h4,h3{
+      text-align: center;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+  .card-header{
+         
+    display: inline-block;
+    text-decoration: none;
+    h5{
+      button{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: large;
+        text-shadow: 0.2em 0.2em 0.2em rgb(83, 83, 83);
+      }
+      
+    }
+  }
+
+}
+
+
+
+       
+
  
  
 
@@ -592,6 +682,7 @@ main{
     }
       
     .imgRedes{
+      z-index: 1;
       .imgRedes2{
         img{
           width: 25px;
@@ -714,10 +805,12 @@ main{
 
   footer{
     .subir{
+      position: absolute;
+      z-index: 2;
       a{
-        position: sticky;
+        
 
-        padding-left: 65%;
+        padding-left: 105%;
         img{
           width: 5%;
           height: 5%;
@@ -784,6 +877,18 @@ main{
         .row{
           
           .dropD{
+            ul{
+              text-align: center;
+              li{
+                display: inline;
+                text-align: center;
+                a{
+                  h4{
+                    text-align: center;
+                  }
+                }
+              }
+            }
             
             padding-left: 50px;
             display: flex;

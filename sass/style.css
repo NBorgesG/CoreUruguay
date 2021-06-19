@@ -81,6 +81,51 @@ header .container-fluid .container ul li a:hover {
   color: #008fdb;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 main .container h4 {
   font-weight: bolder;
   font-size: large;
@@ -401,6 +446,57 @@ main .container .titulo h4 {
   font-size: 40px;
 }
 
+.acordeon {
+  text-align: center;
+}
+
+.acordeon .card {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+
+.acordeon .card div .card-body {
+  background-color: white;
+}
+
+.acordeon .card div .card-body h1 {
+  font-weight: bolder;
+  text-shadow: 0.3em 0.3em 0.3em black;
+}
+
+.acordeon .card img {
+  height: 50%;
+  width: 50%;
+}
+
+.acordeon .card img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.acordeon .card h4, .acordeon .card h3 {
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+
+.acordeon .card-header {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.acordeon .card-header h5 button {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: large;
+  text-shadow: 0.2em 0.2em 0.2em #535353;
+}
+
 .footer {
   background-color: #afafaf;
 }
@@ -470,6 +566,10 @@ main .container .titulo h4 {
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-size: medium;
+}
+
+.footer .redes .imgRedes {
+  z-index: 1;
 }
 
 .footer .redes .imgRedes .imgRedes2 img {
@@ -553,10 +653,13 @@ main .contacto .titulo h1 {
   font-weight: bolder;
 }
 
+footer .subir {
+  position: absolute;
+  z-index: 2;
+}
+
 footer .subir a {
-  position: -webkit-sticky;
-  position: sticky;
-  padding-left: 65%;
+  padding-left: 105%;
 }
 
 footer .subir a img {
@@ -644,6 +747,16 @@ footer .subir a img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main .prodYBusc .cont2 .row .dropD ul {
+    text-align: center;
+  }
+  .main .prodYBusc .cont2 .row .dropD ul li {
+    display: inline;
+    text-align: center;
+  }
+  .main .prodYBusc .cont2 .row .dropD ul li a h4 {
+    text-align: center;
   }
   .nav {
     display: -webkit-box;
