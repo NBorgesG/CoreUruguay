@@ -55,6 +55,14 @@ header .container-fluid .container {
           align-items: center;
 }
 
+header .container-fluid .container .nav .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 header .container-fluid .container .nav h1 {
   padding-top: 15px;
   color: whitesmoke;
@@ -668,32 +676,54 @@ main .nov {
   box-shadow: 10px 10px 31px 5px rgba(0, 0, 0, 0.75);
 }
 
-main .nov .noticia .row .col .videp-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16/9 ratio */
-  padding-top: 30px;
-  /* IE6 workaround*/
-  height: 0;
-  overflow: hidden;
+main .nov .titulo h1 {
+  text-shadow: 0.3em 0.3em 0.3em black;
+  font-weight: bolder;
+  text-align: center;
 }
 
-main .nov .noticia .row .col .videp-responsive iframe, main .nov .noticia .row .col .videp-responsive embed, main .nov .noticia .row .col .videp-responsive object {
-  position: absolute;
-  top: 0;
-  left: 0;
+main .nov .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .nov .row a {
+  text-decoration: none;
+}
+
+main .nov .row .titulo2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+main .nov .row .titulo2 h3 {
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+  text-shadow: 0.2em 0.2em 0.2em #5e5e5e;
+}
+
+main .nov .row div div .imgNot {
   width: 100%;
   height: 100%;
 }
 
-main .nov .noticia .row .col div h3 {
-  text-shadow: 0.3em 0.3em 0.3em black;
+main .nov .row .parrafo {
+  padding-top: 5%;
+  display: inline-block;
+  text-align: center;
+  color: black;
   font-weight: bolder;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .nov .titulo h1 {
-  text-shadow: 0.3em 0.3em 0.3em black;
-  font-weight: bolder;
+main .nov .row .parrafo p {
+  padding-right: 30px;
+  font-size: x-large;
 }
 
 main .contacto {
@@ -748,10 +778,11 @@ footer .subir a img {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .footer .row .d-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  header .container-fluid .container {
+    text-align: center;
+  }
+  header .container-fluid .container .nav .titulo {
+    display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -759,32 +790,29 @@ footer .subir a img {
 }
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
-  .prodYBusc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  header .container-fluid .container {
+    text-align: center;
+  }
+  header .container-fluid .container .nav .titulo {
+    display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .nav {
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header .container-fluid .container {
+    text-align: center;
+  }
+  header .container-fluid .container .nav .titulo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
